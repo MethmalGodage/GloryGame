@@ -9,7 +9,7 @@
    <children>
       <ImageView fitHeight="768.0" fitWidth="1366.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../../images/createNewAccount.jpg" />
+            <Image url="@../images/createNewAccount.jpg" />
          </image>
       </ImageView>
       <TextField id="txtNewAccountName" layoutX="460.0" layoutY="144.0" prefHeight="69.0" prefWidth="515.0" />

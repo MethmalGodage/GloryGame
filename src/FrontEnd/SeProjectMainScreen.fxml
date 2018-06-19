@@ -13,7 +13,7 @@
    <children>
       <ImageView fitHeight="768.0" fitWidth="1358.0" layoutX="-2.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../../images/MainScreen.jpg" />
+            <Image url="@../images/MainScreen.jpg" />
          </image>
       </ImageView>
       <Label id="lblRound" layoutX="380.0" layoutY="267.0" prefHeight="45.0" prefWidth="221.0" text="ROUND 01" textAlignment="CENTER">

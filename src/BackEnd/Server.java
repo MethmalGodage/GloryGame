@@ -1,12 +1,10 @@
-package glory;
+package BackEnd;
 
 import java.io.IOException;
 import java.net.ServerSocket;
 import java.net.Socket;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
-import java.util.concurrent.ThreadFactory;
-import java.util.concurrent.ThreadPoolExecutor;
 
 public class Server {
     public void Server(String args[]) throws IOException{
@@ -24,12 +22,12 @@ public class Server {
             while (true){
                 if (i>=9){
                     Socket clientSocket2 = serverSocket.accept();
-                    Runnable worker = new glory.RequestHandler(clientSocket2);
+                    Runnable worker = new RequestHandler(clientSocket2);
                     executor.execute(worker);
                 }
                 else{
                     Socket clientSocket1 = serverSocket.accept();
-                    Runnable worker = new glory.RequestHandler(clientSocket1);
+                    Runnable worker = new RequestHandler(clientSocket1);
                     executor.execute(worker);
                 }
                 i++;
